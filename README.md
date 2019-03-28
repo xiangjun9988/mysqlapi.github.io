@@ -1,5 +1,5 @@
 # MysqlApi
-**node.js MySQL API 数据库 - 提供（增、删、改、查），通过 HTTP 方式 (POST, GET, PUT, and DELETE)。**
+**node.js MySQL API 数据库 - 提供（增、删、改、查），提供条件查询、分页查询，通过 HTTP 方式 (POST, GET, PUT, and DELETE)。**
 
 ## 特征
 - 提供RESTful
