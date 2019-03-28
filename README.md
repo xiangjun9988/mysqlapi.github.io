@@ -1,6 +1,10 @@
 # MysqlApi
 **node.js MySQL API 数据库 - 提供（增、删、改、查），提供条件查询、分页查询，通过 HTTP 方式 (POST, GET, PUT, and DELETE)。**
 
+## 运行
+- 安装 npm install
+- 运行 npm run start
+
 ## 特征
 - 提供RESTful
 - 提供基础 API 授权认证
