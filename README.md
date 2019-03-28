@@ -1,7 +1,7 @@
 # MysqlApi
-**node.js MySQL API 数据库 - 提供（增、删、改、查），通过 HTTP 方式 (POST, GET, PUT, and DELETE)。
+**node.js MySQL API 数据库 - 提供（增、删、改、查），通过 HTTP 方式 (POST, GET, PUT, and DELETE)。**
 
-##特征
+## 特征
 - 提供RESTful
 - 提供基础 API 授权认证
 - 提供防止SQL注册
@@ -9,7 +9,7 @@
 - 提供分页查询
 - 自动提供数据库所有表的API
 
-##配置简单
+## 配置简单
 ```javascript
 config.port = 3000;
 
@@ -30,7 +30,7 @@ config.page_limit = 10;
 - 输入数据库名称、用户名和密码, 连接到本地 mysql。
 - "分页" 为 true, 在获取请求中启用分页。
 
-##Create (POST)
+## Create (POST)
 插入一条新纪录
 
 ```
@@ -52,7 +52,7 @@ POST http://www.domain.com/api/table_name
 }
 ```
 
-##Read (GET)
+## Read (GET)
 读取数据
 
 - 读取整表数据
@@ -64,7 +64,7 @@ GET http://www.yourdomain.com/api/table_name
 GET http://www.yourdomain.com/api/table_name/id
 ```
 
-##条件查询语法
+## 条件查询语法
 
 - 字段名_ne  不等于操作 != 
 ```
@@ -112,7 +112,7 @@ GET http://www.yourdomain.com/api/table_name?_limit=20
 }
 ```
 
-##Update (PUT)
+## Update (PUT)
 按照指定ID更新记录
 
 ```
@@ -134,7 +134,7 @@ PUT http://www.yourdomain.com/api/table_name/id
 }
 ```
 
-##Delete (DELETE)
+## Delete (DELETE)
 删除指定ID的记录
 
 ```
