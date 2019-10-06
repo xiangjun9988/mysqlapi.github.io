@@ -9,7 +9,8 @@ var config = require('./config');
 var auth = require('http-auth');
 var basic = auth.basic({
 	realm: "Node JS API",
-  file: "./users.htpasswd"
+    file: "./users.htpasswd"
+	// file: __dirname + "../data/users.htpasswd"
 });
 
 app.use(bodyParser.urlencoded({ extended: true }));

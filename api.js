@@ -5,9 +5,11 @@ module.exports = (function() {
 	var router = express.Router();
 	var Sequelize = require('sequelize');
 	var config = require('./config');
-
+	var host = config.host || 'localhost'
 	//Initialize database
-	var sequelize = new Sequelize(config.database, config.username, config.password);
+	var sequelize = new Sequelize(config.database, config.username, config.password,{
+		host: host
+	});
 	var TABLE_PREFIX = config.table_prefix;
 
 	//Pagination settings
